@@ -10,6 +10,8 @@ Hãy cùng thử với ../ và truy cập vào file admin xem có gì xảy ra.
     
     http://challenge01.root-me.org/web-serveur/ch16/?files=../admin  
     
+Tại đây sẽ xuất hiện file ``index.php``, thử truy cập vào xem có gì không.  
+    
 ![image](https://user-images.githubusercontent.com/125866921/229975088-981a13c4-47b0-4742-a00f-3931fefbb85b.png)
 
 
