@@ -58,4 +58,4 @@ Do đó phải tìm những hướng giải quyết khác, sau 1 hồi lan man t
 
   - Giờ chỉ việc mở nó ra là có được flag thôi.  
 
-    password: lf1-Wr4pp3r_Ph4R_pwn3d
+      password: lf1-Wr4pp3r_Ph4R_pwn3d
